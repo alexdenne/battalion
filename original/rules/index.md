@@ -117,7 +117,7 @@ Attacking Towers
 
 Attacking Tricks
  
-        After a blocker is selected, each player, starting with the attacking player takes it in turns to cast a trick, once all players have cast their tricks, resolve them. 
+        After a blocker is selected, each player, starting with the attacking player takes it in turns to cast a trick, once all players have cast their tricks, resolve them                  simultaniously. 
 
 
 Resolving Attacks
