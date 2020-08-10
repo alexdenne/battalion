@@ -17,11 +17,10 @@ Influence
         Each player starts the game with an influence counter set to 3. 
         This represents your influence over the game, it will grow as you defeat your enemies. 
         It is a good idea to try and increase your influence throughout the game.
-        For new players or for an easier game, start with 4 instead.
         Your maximum possible hand size is equal to your current influence. 
         Destroying an army through any means (combat or tricks) allows you to increase your influence by 1.
         Defeating a player allows you to increase your influence by 1. 
-        At the end of your turn (Draw Step) draw card such that your hand size is equal to your influence.
+        At the end of your turn (Draw Step) draw cards such that your hand size is equal to your influence.
 
 
 Turn Order
@@ -66,8 +65,9 @@ Attack
 
 Draw Phase
   
-          Draw cards from the main deck up to your current maximum hand size. 
-          If you own a wizard in play, you may elect to draw a trick from the trick book in place of ONE of your draws. You may repeat this for each wizard you own. 
+         Draw cards from the main deck up to your current maximum hand size. 
+         If you own a wizard in play, you may elect to draw a trick from the trick book in place of ONE of your draws.
+         You may repeat this for each wizard you own. 
 
 
 
@@ -90,14 +90,14 @@ Wizards
 Captains
   
           Captains have a unit value of 1, and an attack power of 1.
-            Captains are drawn from the deck but are fast and sneaky. 
-            See the “Claim” section for how to play a captain.
-            You may attack with a captain on the turn you play it.
-            Once the enemy player has selected a blocker, the captain may use his selected trick, once the trick is used, add it to the trick discard pile. 
+          Captains are drawn from the deck but are fast and sneaky. 
+          See the “Claim” section for how to play a captain.
+          You may attack with a captain on the turn you play it.
+          Once the enemy player has selected a blocker, the captain may use his selected trick, once the trick is used, add it to the trick discard pile. 
 
 Troops
  
-         Troops are the soldiers in your army and what you will need to win the war. Each troops card has a unit value of 1 and contributes and attack power of 1.
+          Troops are the soldiers in your army and what you will need to win the war. Each troops card has a unit value of 1 and contributes and attack power of 1.
           When a troops is destroyed, it is placed in the graveyard.
 
 Attacking
@@ -117,16 +117,18 @@ Attacking Towers
 
 Attacking Tricks
  
-        After a blocker is selected, each player, starting with the attacking player takes it in turns to cast a trick, once all players have cast their tricks, resolve them                  simultaniously. 
+        After a blocker is selected, each player, starting with the attacking player takes it in turns to cast a trick. 
+        After all players have cast their tricks, they must be resolved at once.
 
 
 Resolving Attacks
  
          Once all tricks are cast and resolved, each army loses a number of troops equal to the attack power of the opposing army. 
-          Surviving armies are returned to their owners board. 
-          If you destroy an enemy army, through any means, you increase your maximum hand size by 1.
+         Surviving armies are returned to their owner's board. 
+         As always, if you destroy an enemy army, you increase your maximum hand size by 1.
 
 Tricks
   
-          Tricks may be played by ANY player during a players Action step (even if it is not your turn). 
-          Players can influence combat, and other players turn with a well-timed trick. 
+          Tricks may be played by ANY player during a players Action step (even if it is not your turn).
+          Players can influence combat, and other players turn with a well-timed trick.
+          A defeated player who has lost all of their towers, may not cast tricks.
