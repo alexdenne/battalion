@@ -1,5 +1,5 @@
 This file states the number of cards in the original battalion game
-It then splits them out via the 2 types of card available from the playbook - Monarch and Mage
+It then splits them out via the 2 types of card available from the playbook - Boss and Mage
 and then outlines the only type of card available from the trickbook - Trick
 and then splits them remaining 3 types of card available from the main deck - Fighter, Captain and Leader
 The only variable is the number of tower cards, which is 3 per player.
@@ -11,19 +11,19 @@ Overall
 Playbook Cards
   Total x16
 
-  Monarch
+  Boss
     Total x10
 
-      Lightning x1
-      Ponies x1
-      Skeleton x1
-      Beserk x1
-      Zombie x1
-      Builder x1
-      Siege x1
-      Goblin x1
-      Wealth x1
-      Tactics x1
+      Lightning Queen x1
+      Cavalry King x1
+      Skeleton King x1
+      Beserker Boss x1
+      Zombie Boss x1
+      Builder Boss x1
+      Siege Queen x1
+      Goblin Boss x1
+      Empress of Wealth x1
+      Tactical Commander x1
 
   Mage
     Total x6
