@@ -2,9 +2,11 @@ This file states the number of cards in the original battalion game
 It then splits them out via the 2 types of card available from the playbook - Monarch and Mage
 and then outlines the only type of card available from the trickbook - Trick
 and then splits them remaining 3 types of card available from the main deck - Fighter, Captain and Leader
+The only variable is the number of tower cards, which is 3 per player.
 
 Overall
-  Total x112 
+  Total x112 + 3xN where N is the number of players
+  So 112 + 6 to 18
 
 Playbook Cards
   Total x16
@@ -72,5 +74,5 @@ Main Deck Cards
   Captain
     Total x7
 
-  Playbook
+  Pick from Playbook
     Total x15
