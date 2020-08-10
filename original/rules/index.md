@@ -1,11 +1,11 @@
 Setup
-    Shuffle the Crowns - lay three from the top of the deck next to the crowns book
-    Shuffle the Wizards - Lay three from the top of the deck next to the wizard book
-    Shuffle the tricks - Lay three from the top of the deck next to the trick book
-    Whenever a player selects a card from any of the books, immediately replace it with a card from the corresponding deck.
-    Whenever a trick, wizard or crown is used or destroyed, place it in the corresponding discard pile.
-    Each player sets three towers infront of them and their hand counter. This is the player's “fortress”. 
-    Shuffle the main deck, deal three cards to each player. 
+        Shuffle the Crowns - lay three from the top of the deck next to the crowns book
+        Shuffle the Wizards - Lay three from the top of the deck next to the wizard book
+        Shuffle the tricks - Lay three from the top of the deck next to the trick book
+        Whenever a player selects a card from any of the books, immediately replace it with a card from the corresponding deck.
+        Whenever a trick, wizard or crown is used or destroyed, place it in the corresponding discard pile.
+        Each player sets three towers infront of them and their hand counter. This is the player's “fortress”. 
+        Shuffle the main deck, deal three cards to each player. 
 
 Objective
   Have the last fortress standing, to achieve this, destroy all other players towers and destroy their fort!
