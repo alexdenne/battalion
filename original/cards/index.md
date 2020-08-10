@@ -1,12 +1,13 @@
 This file states the number of cards in the original battalion game
-It then splits them out via the 3 types of card available from a playbook - Monarch, Mage and Trick
+It then splits them out via the 2 types of card available from the playbook - Monarch and Mage
+and then outlines the only type of card available from the trickbook - Trick
 and then splits them remaining 3 types of card available from the main deck - Fighter, Captain and Leader
 
 Overall
   Total x112 
 
 Playbook Cards
-  Total x42
+  Total x16
 
   Monarch
     Total x10
@@ -34,23 +35,22 @@ Playbook Cards
       Samurai x1
       Fog x1
 
+Trick Book
+  Total x26
 
-  Trick
-    Total x26
-
-      Spyglass x4
-      Fireball x4
-      Poison x3
-      Rocket x2
-      Counter x2
-      Rage x2
-      Tactics x2
-      Resupply x2
-      Snipe x1
-      Fog x1
-      Dodge x1
-      Earthquake x1
-      Plague x1
+    Spyglass x4
+    Fireball x4
+    Poison x3
+    Rocket x2
+    Counter x2
+    Rage x2
+    Tactics x2
+    Resupply x2
+    Snipe x1
+    Fog x1
+    Dodge x1
+    Earthquake x1
+    Plague x1
 
 
 Main Deck Cards
@@ -72,5 +72,5 @@ Main Deck Cards
   Captain
     Total x7
 
-  Leader
+  Playbook
     Total x15
