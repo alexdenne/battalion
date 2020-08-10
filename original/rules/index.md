@@ -12,6 +12,17 @@ Objective
 
         Have the last fortress standing, to achieve this, destroy all other players towers and destroy their fort!
 
+Influence 
+
+        Each player starts the game with an influence counter set to 3. 
+        This represents your influence over the game, it will grow as you defeat your enemies. 
+        It is a good idea to try and increase your influence throughout the game.
+        For new players or for an easier game, start with 4 instead.
+        Your maximum possible hand size is equal to your current influence. 
+        Destroying an army through any means (combat or tricks) allows you to increase your influence by 1.
+        Defeating a player allows you to increase your influence by 1. 
+        At the end of your turn (Draw Step) draw card such that your hand size is equal to your influence.
+
 
 Turn Order
 
@@ -106,7 +117,7 @@ Attacking Towers
 
 Attacking Tricks
  
-        After a blocker is selected, each player, starting with the attacking player takes it in turns to cast a trick, once all players have cast their tricks, resolve them. 
+        After a blocker is selected, each player, starting with the attacking player takes it in turns to cast a trick, once all players have cast their tricks, resolve them                  simultaniously. 
 
 
 Resolving Attacks
