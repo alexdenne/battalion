@@ -74,5 +74,5 @@ Main Deck Cards
   Captain
     Total x7
 
-  Pick from Playbook
+  Contract Cards
     Total x15
