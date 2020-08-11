@@ -48,15 +48,17 @@ Buy
   
         You may discard TWO cards from your hand, and reduce your maximum hand size by one and select either a wizard or king from the available options, add it to your hand. 
 
-Claim
+Contracts
+
+        Contracts are drawn randomly from the main deck in the center of the table.
+        At any time during your action step, discard the contract card into the graveyard, and select a commander or mage card from the playbook. This does not cound as an action.
+
+Claiming an Ary
           
-          You may place a captain or leader claim card on an unclaimed army in the army build zone. You claim this army and place it in front of you. 
+          You may place a captain or leader on an unclaimed army in the army build zone. You claim this army and place it in front of you. 
           Claiming with a captain card
           Claim the army and place it in front of you.
           Select a trick, and place it face up next to the captain.
-          Claiming with a leader claim card
-
-
 Attack
  
          Select One of your current armies and declare and attack against an opposing player. 
