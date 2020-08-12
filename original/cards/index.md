@@ -15,34 +15,34 @@ Playbook Cards
     Total x10
 
       Lightning Queen x1
-      Lightning Queen may attack immediately after you claim a Fighter.
+      Lightning Queen may attack immediately after you claim an Army.
       
       Cavalry King x1
-      You may add a Fighter from your hand to Cavalry King's Army when he attacks.
+      You may add 1 Fighter from your hand to Cavalry King's Army when he attacks.
       
       Skeleton King x1
-      While in play and at the start of your turn, you may resurrect a Fighter from the graveyard into Skeleton King's Army.
+      While in play and at the start of your turn, you may resurrect 1 Fighter from the graveyard into Skeleton King's Army.
       
       Beserker Boss x1
       When Bezerker Boss attacks and survives, he must attack again.
 
       Zombie Boss x1
-      Zombie boss must be placed directly onto your battlefield without claiming live Fighters. Instead, resurrect 3 Fighters from the graveyard for his army. While he surives, Zombie boss must attack on your turn.
+      Zombie boss must be placed directly onto your battlefield without claiming an Army. Instead, resurrect 3 Fighters from the graveyard for his army. While he surives, Zombie boss must attack on your turn.
       
       Builder Boss x1
-      While he survives, you may carry out the build phase of your turn twice.
+      While Builder Boss survives, you may carry out the build phase of your turn twice.
       
       Siege Queen x1
-      Siege Queen's Army takes no damage from Towers
+      Siege Queen's Army takes 0 damage from Towers
 
       Goblin Boss x1
-      Goblin Boss has +1 attack power
+      Goblin Boss has +1 attack power.
 
       Empress of Wealth x1
-      You gain +1 influence while the Empress of Wealth survives
+      You gain +1 influence while the Empress of Wealth survives.
 
       Tactical Commander x1
-      Tactical Commander may choose which Army he attacks
+      Tactical Commander may choose which Army he attacks.
 
 
   Mage
@@ -55,13 +55,13 @@ Playbook Cards
       When Rocket Mage enters play, destroy 1 enemy tower.
 
       Chaos x1
-      When Chaos Mage enters play, reveal the top two cards from the trick library and resolve them immediately in any order
+      When Chaos Mage enters play, reveal the top 2 cards from the trick library and resolve them immediately in any order
 
       Fireball x1
-      When Fireball Mage enters play, deal 2 damage to any army.
+      When Fireball Mage enters play, deal 2 damage to 1 enemy army.
 
       Poison Mage x1
-      When Poison Mage enters play, place poison onto an enemy army.
+      When Poison Mage enters play, place poison onto 1 enemy army.
 
       Earthquake x1
       When Earthquake Mage enters play, destroy half of a target army (rounded down).
@@ -70,7 +70,7 @@ Playbook Cards
       Samurai Mage has +1 attack power in combat.
 
       Fog x1
-      When Fog Mage enters play, you cannot be attacked by enemy Armies until after your next turn
+      When Fog Mage enters play, you cannot be attacked by enemy Armies until after your next turn.
 
 
 Trick Book
