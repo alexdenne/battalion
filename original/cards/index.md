@@ -24,7 +24,7 @@ Playbook Cards
       While in play and at the start of your turn, you may resurrect 1 Fighter from the graveyard into Skeleton King's Army.
       
       Beserker Boss x1
-      When Bezerker Boss attacks and survives, he must attack again.
+      If Bezerker Boss attacks and survives, his army must attack again (once per turn).
 
       Zombie Boss x1
       Zombie boss must be placed directly onto your battlefield without claiming an Army. Instead, resurrect 3 Fighters from the graveyard for his army. While he surives, Zombie boss must attack on your turn.
