@@ -15,7 +15,7 @@ Playbook Cards
     Total x10
 
       Lightning Queen x1
-      Lightning Queen may attack immediately after you claim an Army.
+      Lightning Queen may attack immediately after she claims an Army.
       
       Cavalry King x1
       You may add 1 Fighter from your hand to Cavalry King's Army when he attacks.
@@ -27,10 +27,10 @@ Playbook Cards
       If Bezerker Boss attacks and survives, his army must attack again (once per turn).
 
       Zombie Boss x1
-      Zombie boss must be placed directly onto your battlefield without claiming an Army. Instead, resurrect 3 Fighters from the graveyard for his army. While he surives, Zombie boss must attack on your turn.
+      When Zombie Boss enters play, resurrect 3 Fighters from the graveyard and immediately claim them. While in play, Zombie Boss must attack on your turn.
       
       Builder Boss x1
-      While Builder Boss survives, you may carry out the build phase of your turn twice.
+      While Builder Boss is in play, you may take a second build step on each turn.
       
       Siege Queen x1
       Siege Queen's Army takes 0 damage from Towers
@@ -39,7 +39,7 @@ Playbook Cards
       Goblin Boss has +1 attack power.
 
       Empress of Wealth x1
-      You gain +1 influence while the Empress of Wealth survives.
+      You gain +1 influence while the Empress of Wealth is in play.
 
       Tactical Commander x1
       Tactical Commander may choose which Army he attacks.
@@ -58,7 +58,7 @@ Playbook Cards
       When Chaos Mage enters play, reveal the top 2 cards from the trick library and resolve them immediately in any order
 
       Fireball x1
-      When Fireball Mage enters play, deal 2 damage to 1 enemy army.
+      When Fireball Mage enters play, deal 2 damage to any army.
 
       Poison Mage x1
       When Poison Mage enters play, place poison onto 1 enemy army.
