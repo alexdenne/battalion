@@ -15,48 +15,62 @@ Playbook Cards
     Total x10
 
       Lightning Queen x1
-      "Lightning Queen May Also Attack immediately after claiming and Army" 
+      Lightning Queen may attack immediately after you claim an Army.
+      
       Cavalry King x1
-      "When Cavalry King Attacks, you may add a unittroops card from your hand to cavalry king's army"
+      You may add 1 Fighter from your hand to Cavalry King's Army when he attacks.
+      
       Skeleton King x1
-      "At the start of your turn, you may add one unittroops card from the gbraveyard to Skeleton Kings Army"
+      While in play and at the start of your turn, you may resurrect 1 Fighter from the graveyard into Skeleton King's Army.
+      
       Beserker Boss x1
-      "Bezerker Boss must attack every turn he is in play, after this attack Bezerker boss must attack again"
-       "When Beserker Boss is on your battlefield, you must use your action step to attack with Beserker Boss' army. If the army survives, it must attack a second time."
+      If Bezerker Boss attacks and survives, his army must attack again (once per turn).
+
       Zombie Boss x1
-      "Place zombie boss directly onto your battlefield. You may add up to 3 troops cards from the graveyard to zombie boss's army. Zombie boss must attack every turn"
+      Zombie boss must be placed directly onto your battlefield without claiming an Army. Instead, resurrect 3 Fighters from the graveyard for his army. While he surives, Zombie boss must attack on your turn.
+      
       Builder Boss x1
-      "You may play a second build step after your first, before your action step"
-      "You may build twice during the build step"
+      While Builder Boss survives, you may carry out the build phase of your turn twice.
+      
       Siege Queen x1
-      "Armies you controll take no damage from towers whilst you controll siege queen"
+      Siege Queen's Army takes 0 damage from Towers
+
       Goblin Boss x1
-      "Goblin boss gains +1 attack power when attacking"
+      Goblin Boss has +1 attack power.
+
       Empress of Wealth x1
-      "You gain +1 influence whilst you control empress of wealth"
+      You gain +1 influence while the Empress of Wealth survives.
+
       Tactical Commander x1
-      "Tactical commander may chose which army he attacks"
+      Tactical Commander may choose which Army he attacks.
 
 
   Mage
     Total x6
 
-       Spyglass x1
-      "When X Mage Enters Play, You may look at and rearrange tthe top 3 cards of any library, and put them back in any order"
+      Spyglass x1
+      When Spyglass Mage enters play, you may look at and rearrange the top 3 cards of any library, and put them back in any order.
+
       Rocket x1
-      "When X Mage Enters Play, Destroy 1 target tower"
+      When Rocket Mage enters play, destroy 1 enemy tower.
+
       Chaos x1
-      "When X Mage Enters Play, Reveal the top two cards from the tricks library and resolve them immediately in any order"
+      When Chaos Mage enters play, reveal the top 2 cards from the trick library and resolve them immediately in any order
+
       Fireball x1
-      "When X Mage Enters Play, Deal 2 damage to any army"
-      Poision x1
-      "When X Mage Enters Play, Place poison onto a target army. At the start of that players build phase, that army suffers 1 damage. When the poisoned army dies, discard             poison"
+      When Fireball Mage enters play, deal 2 damage to 1 enemy army.
+
+      Poison Mage x1
+      When Poison Mage enters play, place poison onto 1 enemy army.
+
       Earthquake x1
-      "When X Mage Enters Play, Destroy half the troops of a target army, rounded down"
+      When Earthquake Mage enters play, destroy half of a target army (rounded down).
+
       Samurai x1
-      "Samurai mage gains +1 attack power in combat”
+      Samurai Mage has +1 attack power in combat.
+
       Fog x1
-      “When X Mage Enters Play you may not be attacked until your next turn”
+      When Fog Mage enters play, you cannot be attacked by enemy Armies until after your next turn.
 
 
 Trick Book
