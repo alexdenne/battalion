@@ -118,7 +118,7 @@ Main Deck Cards
     Total x7
 
   Contract Cards
-    Total x1
+    Total x12
     
     Tower Cards
     Total x12
