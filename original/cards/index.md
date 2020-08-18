@@ -18,13 +18,13 @@ Playbook Cards
       Lightning Queen may attack immediately after she claims an Army.
       
       Cavalry King x1
-      You may add 1 Fighter from your hand to Cavalry King's Army when he attacks.
+      You may add 1 unit from your hand to Cavalry King's Army when he attacks.
       
       Skeleton King x1
-      While in play and at the start of your turn, you may resurrect 1 Fighter from the graveyard into Skeleton King's Army.
+      Before your build step, add 1 unit from the graveyard to Skeleton King's army.
       
       Beserker Boss x1
-      If Bezerker Boss attacks and survives, his army must attack again (once per turn).
+      If Beserker Boss attacks and survives, his army must attack again (once per turn).
 
       Zombie Boss x1
       When Zombie Boss enters play, resurrect 3 Fighters from the graveyard and immediately claim them. While in play, Zombie Boss must attack on your turn.
@@ -42,20 +42,20 @@ Playbook Cards
       You gain +1 influence while the Empress of Wealth is in play.
 
       Tactical Commander x1
-      Tactical Commander may choose which Army he attacks.
+      The Tactical Commander may choose which army they attack.
 
 
   Mages
     Total x6
 
       Spyglass Sorceress
-      When Spyglass Mage enters play, you may look at and rearrange the top 3 cards of any library, and put them back in any order.
+      When Spyglass Mage enters play, look at and rearrange the top 3 cards of any library.
 
       Rocket Wizard
       When Rocket Mage enters play, destroy 1 enemy tower.
 
       Chaos Wizard
-      When Chaos Mage enters play, reveal the top 2 cards from the trick library and resolve them immediately in any order
+      When Chaos Mage enters play, reveal the top 2 cards from the trick library and resolve them immediately, in any order.
 
       Fireball Mage
       When Fireball Mage enters play, deal 2 damage to any army.
@@ -70,16 +70,20 @@ Playbook Cards
       Samurai Mage has +1 attack power in combat.
 
       Fog Mage
-      When Fog Mage enters play, you cannot be attacked by enemy Armies until after your next turn.
+      When Fog Mage enters play, you cannot be attacked by enemy armies until after your next turn.
 
 
 Trick Book
   Total x26
 
     Spyglass x4
+    Look at an rearrange the top 3 cards of any library.
     Fireball x4
+    Deal 2 damage to any army.
     Poison x3
+    Place poison on any army. Before the owning player's build step, that army loses 1 unit.
     Rocket x2
+    Destroy 1 enemy tower.
     Counter x2
     “Counter the effects of any one trick, discard after use”
     Rage x2
@@ -90,11 +94,12 @@ Trick Book
     Snipe x1
     “Destroy any leader in play”
     Fog x1
+    This player cannot be attacked until after their next turn.
     Dodge x1
-    “Target army may attack a players tower directly this turn”
+    “Target army may attack a player's tower directly this turn”
     Earthquake x1
     Plague x1
-    “-1 troops from every army in play”
+    “-1 unit from every army in play”
 
 
 
