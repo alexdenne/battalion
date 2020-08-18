@@ -45,31 +45,31 @@ Playbook Cards
       Tactical Commander may choose which Army he attacks.
 
 
-  Mage
+  Mages
     Total x6
 
-      Spyglass x1
+      Spyglass Sorceress
       When Spyglass Mage enters play, you may look at and rearrange the top 3 cards of any library, and put them back in any order.
 
-      Rocket x1
+      Rocket Wizard
       When Rocket Mage enters play, destroy 1 enemy tower.
 
-      Chaos x1
+      Chaos Wizard
       When Chaos Mage enters play, reveal the top 2 cards from the trick library and resolve them immediately in any order
 
-      Fireball x1
+      Fireball Mage
       When Fireball Mage enters play, deal 2 damage to any army.
 
-      Poison Mage x1
+      Poison Sorceress
       When Poison Mage enters play, place poison onto 1 enemy army.
 
-      Earthquake x1
+      Earthquake Sorceress
       When Earthquake Mage enters play, destroy half of a target army (rounded down).
 
-      Samurai x1
+      Samurai Wizard
       Samurai Mage has +1 attack power in combat.
 
-      Fog x1
+      Fog Mage
       When Fog Mage enters play, you cannot be attacked by enemy Armies until after your next turn.
 
 
@@ -120,5 +120,5 @@ Main Deck Cards
   Contract Cards
     Total x12
     
-    Tower Cards
+  Tower Cards
     Total x12
