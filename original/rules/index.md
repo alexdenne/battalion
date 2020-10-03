@@ -134,3 +134,16 @@ Tricks
           Tricks may be played by ANY player during a players Action step (even if it is not your turn).
           Players can influence combat, and other players turn with a well-timed trick.
           A defeated player who has lost all of their towers, may not cast tricks.
+
+Ending the Game
+
+          The game enda when one of two conditions are met.
+          One player remains standing when all other towers are destroyed. 
+
+          Or
+
+          The last card is drawn from the central deck. At which point the player with the most points wins.
+          Tower = 3 point
+          Leaders = 2 points
+          Units = 1 point
+          Influence = 1 point per influence
