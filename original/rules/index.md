@@ -53,7 +53,7 @@ Contracts
         Contracts are drawn randomly from the main deck in the center of the table.
         At any time during your action step, discard the contract card into the graveyard, and select a commander or mage card from the playbook. This does not cound as an action.
 
-Claiming an Ary
+Claiming an Army
           
           You may place a captain or leader on an unclaimed army in the army build zone. You claim this army and place it in front of you. 
           Claiming with a captain card
