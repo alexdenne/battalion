@@ -1,419 +1,736 @@
-# Battalion Rules Version 1.5 (2025)
+# Battalion - Complete Rulebook (v1.18)
 
-**Focus:** Simultaneous Chaos, Leaders Required, Balanced Economy  
-**Major Changes from v1.4:** Communal simultaneous building (face-down reveal!), leaders REQUIRED to claim, contracts cost 2 influence, fewer troops (40 vs 58), more captains (12 vs 7)
+**Game Design**: Strategic card game for 2-6 players
+**Game Length**: 20-30 turns (15-30 minutes)
+**Victory**: Last player standing or highest influence when troop deck depletes
+**Simulator Version**: v1.18 (Meta-Evolution Stable)
+**Date**: November 5, 2025
+
+---
+
+## Table of Contents
+
+1. [Game Overview](#game-overview)
+2. [Components](#components)
+3. [Setup](#setup)
+4. [Turn Structure](#turn-structure)
+5. [Core Mechanics](#core-mechanics)
+6. [Event Cards](#event-cards)
+7. [Combat](#combat)
+8. [Victory Conditions](#victory-conditions)
+9. [Strategy Guide](#strategy-guide)
+
+---
+
+## Game Overview
+
+Battalion is a strategic card game where players build armies, contract powerful leaders, and battle for supremacy. The game features a unique **two-deck system** with separate **Troop Deck** (combat power) and **Event Deck** (strategic actions), plus an **Unclaimed Pot** system where troops accumulate until players claim them.
+
+### Key Features
+
+- **Turn-based sequential play** - One player acts at a time (no simultaneous building)
+- **Unclaimed Pot mechanic** - Troops accumulate in a communal pool, claimed via Standard Contract
+- **ANTE system** - Every turn begins with 1 troop automatically added to the pot
+- **Event card chaining** - Play multiple cards per turn (average 2-3 cards)
+- **Multiple armies per player** - Strategic army positioning and selection
+- **Two-deck system** - Troop Deck depletes (game timer), Event Deck reshuffles infinitely
+
+---
+
+## Components
+
+### 1. Troop Deck (Combat Power)
+
+**Contents**: 60-150 troops (configurable, GA-optimized)
+
+**Troop Ranks** (Strength 1-5):
+- **Rank 1**: 33% of deck - Weakest troops
+- **Rank 2**: 25% of deck
+- **Rank 3**: 20% of deck
+- **Rank 4**: 15% of deck
+- **Rank 5**: 7% of deck - Elite troops
+
+**Captains** (40 unique):
+- Represented as value `0` in the deck
+- When drawn, converted to strength-10 troops ("Jackpot!")
+- Mixed into the Troop Deck with regular troops
+
+**Army Strength**: Sum of all troop ranks + leader bonuses
+- Example: Army with [R3, R2, R5, R1] = 11 strength (not 4 separate attacks)
+
+### 2. Event Deck (Strategic Actions)
+
+**Contents**: 145 cards total (never depletes - reshuffles when empty)
+
+**Card Types**:
+- **Contract Cards** (25): Contract Mage, Contract Commander
+- **Gather Troops** (30): Small (1-3), Medium (3-5), Large (5-7)
+- **Attack Cards** (20): Basic, Tactical, Conditional, AOE, Risky
+- **Economic Cards** (20): Gain influence, draw cards
+- **Manipulation Cards** (15): Disrupt opponents
+- **Utility Cards** (35): Timing, card draw, special effects
+
+See [Event Cards](#event-cards) section for complete list.
+
+### 3. Leader Markets (Draft System)
+
+**Mage Market**: 3 face-up mages, 37 face-down in deck (40 total unique mages)
+**Commander Market**: 3 face-up commanders, 37 face-down in deck (40 total unique commanders)
+
+- Players can see all face-up leaders before contracting
+- Markets auto-refill from decks when leaders drafted
+- Strategic counter-picking and drafting decisions
+
+**Leader Types**:
+- **Captains** (40 unique): +1 attack, unit value 1, found in Troop Deck
+- **Mages** (40 unique): +2 attack, unit value 1, drafted from market
+- **Commanders** (40 unique): +3 attack, unit value 1, drafted from market
+
+### 4. Player Components
+
+Each player has:
+- **3 Towers** (HP = 3-5, configurable)
+- **Starting Influence**: 4-8 (configurable, default: 6)
+- **Hand of event cards**: Size equals influence (floor of 2, ceiling of 10-12)
+- **Multiple armies**: Each army has troops + optional leader
 
 ---
 
 ## Setup
 
-- Shuffle the Commanders - lay three from the top of the deck next to the commanders book
-- Shuffle the Mages - Lay three from the top of the deck next to the mage book
-- Shuffle the tricks - Lay three from the top of the deck next to the trick book
-- Whenever a player selects a card from any of the books, immediately replace it with a card from the corresponding deck.
-- Whenever a trick, mage or commander is used or destroyed, place it in the corresponding discard pile.
-- Each player sets three towers in front of them and their hand counter. This is the player's "fortress". 
-- **Set up four communal build piles in the center of the table** (these are shared by all players)
-- Shuffle the main deck, deal three cards to each player. 
+### Game Setup
 
-## Objective
+1. **Shuffle Decks**:
+   - Shuffle Troop Deck (troops + 40 captains mixed together)
+   - Shuffle Event Deck (145 cards)
+   - Shuffle Mage Deck (40 mages)
+   - Shuffle Commander Deck (40 commanders)
 
-Have the last fortress standing. To achieve this, destroy all other players' towers and destroy their fort!
+2. **Create Markets**:
+   - Draw 3 mages face-up (Mage Market)
+   - Draw 3 commanders face-up (Commander Market)
 
-## Influence 
+3. **Player Setup**:
+   - Each player receives 3 towers
+   - Each player receives starting influence (default: 6)
+   - Each player draws starting hand (default: 6 event cards)
 
-- Each player starts the game with an influence counter set to 3. 
-- This represents your influence over the game, it will grow as you defeat your enemies. 
-- It is a good idea to try and increase your influence throughout the game.
-- Your maximum possible hand size is equal to your current influence. 
-- You may never have more cards in hand than your current influence.
-- Destroying an army through any means (combat or tricks) allows you to increase your influence by 1.
-- Defeating a player allows you to increase your influence by 1. 
-- At the end of your turn (Draw Step) draw cards until your hand size equals your influence. If you already have cards equal to or greater than your influence, do not draw.
+4. **Unclaimed Pot**:
+   - Starts empty
+   - Will fill naturally via ANTE and GATHER cards
 
----
-
-## 🆕 NEW IN v1.5: SIMULTANEOUS BUILD PHASE
-
-**Inspired by 7 Wonders, Robo Rally, and Diplomacy - everyone builds at once!**
-
-### How Simultaneous Building Works
-
-The simultaneous build phase happens at the start of each round and whenever a player chooses the "Build" action. This is the MOST IMPORTANT change in v1.5.
-
-### Phase 1: PLANNING (Hidden)
-
-**All players plan their builds simultaneously WITHOUT revealing to others.**
-
-1. **Look at your hand** - Review your troop cards
-2. **Choose troops to place** - Select which troops you want to place in the communal piles
-3. **Keep it secret** - Don't show others what you're placing
-4. **Ready up** - Once you've decided, indicate you're ready (place cards face-down or give a signal)
-
-**Key Rules:**
-- You can place troops in ANY of the 4 communal piles
-- You must follow color matching rules (white/red vs black)
-- You must follow rank rules (equal or higher than card below)
-- You CAN place multiple cards at once (to the same or different piles)
-- If you have legal placements available, you MUST place at least one card
-- If you cannot legally place any troops, you may discard one card instead
-
-**Physical Mechanic (Critical for Fun!):**
-- **Option A (Recommended):** Place cards FACE-DOWN next to the communal piles
-- **Option B:** Write down your placements on paper
-- **Option C:** Hold cards ready in hand, don't reveal yet
-
-### Phase 2: READY CHECK
-
-**Wait for ALL players to finish planning.**
-
-- One player (dealer, or rotating) acts as "Build Master"
-- Build Master asks: "Everyone ready?"
-- All players must confirm they're ready
-- **NO TAKE-BACKS** once you say ready!
-- If someone needs more time, everyone waits (but be quick!)
-
-**Tip:** Use a "ready token" - flip it when you're done planning. When all tokens flipped, proceed to reveal!
-
-### Phase 3: REVEAL (The Dramatic Moment!)
-
-**Flip ALL cards simultaneously - THIS IS THE FUN PART!**
-
-1. **Build Master counts down:** "3... 2... 1... REVEAL!"
-2. **All players flip/reveal** their chosen placements AT THE SAME TIME
-3. **Place troops onto communal piles** according to face-down positions
-4. **Chaos ensues!** - Multiple players may build on same pile, races to claim armies begin
-
-**What Makes This Fun:**
-- 🎭 **Drama** - The flip moment is exciting!
-- 🤯 **Surprise** - You don't know what others are doing until reveal
-- 😱 **Competition** - Everyone sees the new armies at once
-- 🏃 **Urgency** - First to claim on their turn gets the army
-
-### Phase 4: VALIDATION
-
-**Check if placements are legal - mistakes happen!**
-
-1. **Check each pile** - Are color and rank rules followed?
-2. **Illegal placements:**
-   - If a card violates color matching → Discarded to main discard pile
-   - If a card violates rank order → Discarded to main discard pile
-   - Player who made illegal placement gets no penalty (just wasted action)
-3. **Legal placements** - Cards stay on piles, armies grow
-
-**Note:** Mistakes are part of the chaos! In the heat of the moment, players might misplace. That's OK - just discard and continue.
-
-### Why Simultaneous Building Changes Everything
-
-**Before v1.5 (Sequential):**
-- Turtle goes last
-- Sees what everyone builds
-- Reacts perfectly to threats
-- Never commits without perfect information
-- **Result:** Turtle dominates (54% win rate)
-
-**After v1.5 (Simultaneous):**
-- Everyone commits at once
-- No perfect information
-- Must predict what others will do
-- Can't react, only anticipate
-- **Result:** Turtle loses advantage, all strategies balanced!
-
-**This is based on proven game design:**
-- **7 Wonders:** Everyone plays building cards face-down, reveals together
-- **Robo Rally:** Program moves in secret, execute simultaneously
-- **Diplomacy:** Write orders, submit, reveal all at once
-- **Race for the Galaxy:** Choose actions simultaneously
-
-**The key:** Removing perfect information forces commitment and risk-taking!
+5. **Determine Turn Order**:
+   - Random starting player
+   - Play proceeds clockwise (or anti-clockwise if Reverse Turn Order played)
 
 ---
 
-## Turn Order
+## Turn Structure
 
-Starting with the player left of the dealer, each player takes turns to work through the action and draw phases.
+Each turn follows this exact sequence:
 
-**IMPORTANT:** Building is now SIMULTANEOUS (above), but actions are still SEQUENTIAL (below).
+### Phase 0: ANTE (Automatic)
 
-### Action Phase
- 
-On the action step, a player MUST choose ONE of the following actions. After the action is finished, move to the draw step.
+**Every turn begins with the ANTE mechanic:**
 
-#### Build (Action)
-  
-Trigger another simultaneous build phase (follow all 4 phases above: Planning → Ready Check → Reveal → Validation)
+1. Draw **1 troop** from the top of the Troop Deck
+2. Automatically add it to the **Unclaimed Pot**
+3. If the troop is a **Captain** (value 0):
+   - Convert to strength-10 ("JACKPOT!")
+   - Add to pot (does NOT auto-claim)
 
-#### Buy
-  
-**🆕 CHANGED IN v1.5:** You may discard ONE card from your hand, and reduce your influence by 1. Select either a mage or commander from the available options and add it to your hand. **Bought leaders gain +1 attack power permanently!**
+**Purpose**: Creates constant pot pressure and claiming decisions.
 
-**This makes buying superior to contracts:**
-- Contracts give normal-strength leaders (cost 2 influence)
-- Buying gives enhanced leaders (+1 attack) (cost 1 influence + 1 card)
-- Example: Berserker Boss normally has 2 attack, but 3 attack if bought
+**Example**:
+```
+Turn 1: ANTE draws Rank 3 → Pot now: [3] (1 troop, strength 3)
+Turn 2: ANTE draws Rank 2 → Pot now: [3, 2] (2 troops, strength 5)
+Turn 3: ANTE draws CAPTAIN → Pot now: [3, 2, 10] (3 troops, strength 15) JACKPOT!
+```
 
-#### Contracts
+### Phase 1: Draw Event Card
 
-**🆕 CHANGED IN v1.5:** Contracts are drawn randomly from the main deck in the center of the table. At any time during your action step, you may discard the contract card AND one additional card from your hand AND **reduce your influence by 2** to select a commander or mage card from the playbook and add it to your hand. This does not count as an action.
+1. Draw **1 event card** from the Event Deck
+2. Add to your hand
+3. If Event Deck is empty:
+   - Shuffle discard pile
+   - Reshuffle becomes new Event Deck
+   - Continue drawing
 
-**Important:** Contracts now cost 2 influence (was 3 in v1.4, was 1 in v1.3). This is the sweet spot - meaningful cost but not prohibitive.
+### Phase 2: Event Card Chaining Loop
 
-**Trade-off:**
-- **Contract (2 influence):** Cheaper on influence, get normal leader
-- **Buy (1 influence + 1 card):** Cheaper on influence, lose card, get stronger leader (+1 attack)
+**This is the main action phase where you can play multiple cards:**
 
-#### Claiming an Army
+1. **Choose an event card** from your hand to play
+   - Or use **Standard Contract** (free action, costs influence only)
+2. **Pay the cost** (influence, discard cards, etc.)
+3. **Resolve the card effect**
+4. **Remove card from hand** (discard to Event Discard pile)
+5. **Repeat** - Play another card if you want (up to 20 cards per turn, safety limit)
 
-**🆕 CRITICAL CHANGE IN v1.5: YOU MUST HAVE A LEADER TO CLAIM!**
+**Chain stops when**:
+- No more playable cards in hand
+- Not enough influence to play anything
+- Turn-ending card played (e.g., Attack cards end your turn)
+- Tower destroyed (immediately ends turn)
+- Standard Contract attempted and failed (won't retry this turn)
+- Strategy decides to stop chaining
 
-**Requirements:**
-- You MUST have a leader (commander, mage, or captain) in your hand
-- Select an unclaimed army from one of the 4 communal build piles
-- That army must have at least 3 troops (minimum army size)
+**Average chain length**: 2-3 cards per turn
 
-**To Claim:**
-1. Choose an unclaimed army in the communal area
-2. Play a leader from your hand onto that army
-3. Move the army to your battlefield (in front of your towers)
+**Example Chain**:
+```
+Turn 5 - Player 1:
+  1. Play "Gather Medium" → +4 troops to pot
+  2. Play "Gather Small" → +2 troops to pot
+  3. Standard Contract → Claim all 6 pot troops + draft Mage
+  4. Play "Attack Basic" → Attack Player 2 (ENDS TURN)
 
-**If you have no leaders:** You CANNOT claim armies! You must first acquire a leader through:
-- **Drawing a captain** from the main deck
-- **Buying** a commander or mage (costs 1 influence + 1 card)
-- **Contract** for a commander or mage (costs 2 influence + 1 contract card + 1 other card)
+Total: 4 actions in one turn
+```
 
-**Why This Matters:**
-- Turtle can no longer build 5-troop armies without leaders
-- Everyone must engage with the economy (buying/contracts/drawing)
-- Leaders are NECESSARY, not optional
-- This was always intended but wasn't explicitly stated before!
+### Phase 3: Hand Refill
 
-**Claiming with a commander or mage:**
-- Place the leader on the army
-- Apply any "on claim" abilities (see Characters section)
-- Move army to your battlefield
+**At the end of your turn:**
 
-**Claiming with a captain card:**
-- Claim the army and place it in front of you
-- Place the captain on the army
-- Select a trick from the trick book and place it face-up next to the captain
-- Captain armies can attack immediately (see Captains section)
+1. Calculate target hand size: `max(2, your_influence)`
+   - **Floor of 2**: You always draw to at least 2 cards (prevents death spiral)
+   - **Ceiling**: Can't exceed max hand size (10-12 cards, configurable)
+2. Draw event cards until hand size = target
+3. If Event Deck empties, reshuffle discard pile
 
-#### Attack
- 
-Select one of your current armies and declare an attack against an opposing player. 
-Follow the instructions under the "Attack Rules" section.
+**Example**:
+```
+Player has 5 influence, 2 cards in hand
+Target hand size = max(2, 5) = 5
+Draw 3 cards → Now has 5 cards in hand
+```
 
-### Draw Phase
-  
-- Draw cards from the main deck up to your current maximum hand size. 
-- If you own a mage in play, you may elect to draw a trick from the trick book in place of ONE of your draws.
-- You may repeat this for each mage you own. 
+### Phase 4: Elimination Check
+
+1. Check if any player has 0 towers remaining
+2. Eliminate that player
+3. Check if game is over (1 or 0 players remain)
+
+### Phase 5: Next Player
+
+1. Move to next active player (clockwise or anti-clockwise)
+2. Begin their turn with ANTE
 
 ---
 
-## Characters
+## Core Mechanics
 
-### Commanders
-    
-- Commanders have a unit value of 2 and a base attack power of 0
-- **🆕 v1.5:** If bought (not obtained via contract), commanders have +1 attack (so 1 attack instead of 0)
-- Commanders are strong leaders that excel in combat. 
-- See the "Claim" section for how to play a commander.
+### Standard Contract (Primary Claiming Mechanism)
 
-### Mages
-  
-- Mages have a unit value of 1 and a base attack power of 0.
-- **🆕 v1.5:** If bought (not obtained via contract), mages have +1 attack (so 1 attack instead of 0)
-- Mages are weak in combat but allow you access to powerful tricks.
-- See the "Claim" section for how to play a mage.
-- When you claim an army with a mage, you may use their unique ability. This ability is used only once. 
-- You may replace one of your draws in the draw step with a trick from the book for each mage you have in play. 
+**The most important action in the game - this is how you claim troops from the pot!**
 
-### Captains
-  
-- Captains have a unit value of 1, and an attack power of 1.
-- Captains are drawn from the deck but are fast and sneaky. 
-- See the "Claim" section for how to play a captain.
-- You may attack with a captain on the turn you play it.
-- Once the enemy player has selected a blocker, the captain may use their selected trick. Once the trick is used, add it to the trick discard pile. 
+**What is Standard Contract?**
+- It's a **free action** (NOT an event card!)
+- Costs **influence only** (typically 1-3 influence, GA-optimized)
+- Available every turn if you meet the requirements
 
-### Troops
- 
-- Troops are the soldiers in your army and what you will need to win the war. 
-- Each troops card has a unit value of 1 and contributes an attack power of 1.
-- When a troop is destroyed, it is placed in the graveyard.
+**Requirements**:
+1. Have enough influence (typically 1-3)
+2. Unclaimed pot has at least 1 troop
+3. At least 1 leader available in markets (Mage or Commander)
+
+**What it does**:
+1. **Spend influence** (cost set by game configuration)
+2. **Claim ALL troops** in the unclaimed pot
+3. **Draft 1 leader** from either Mage or Commander market
+4. **Create new army** immediately (troops + leader)
+5. Market automatically refills with new leader
+
+**Why it's important**: This is the primary way to build armies and claim troops before opponents do!
+
+**Example**:
+```
+Unclaimed Pot: [3, 2, 10] (3 troops, total strength 15)
+Player has 5 influence
+
+Standard Contract:
+  - Spend 2 influence → Now has 3 influence
+  - Draft "Fire Mage" (+2 attack) from Mage Market
+  - Claim all 3 troops: [3, 2, 10]
+  - Create new army: [3, 2, 10] + Fire Mage = 17 total strength
+  - New mage flipped to market
+```
+
+### Unclaimed Pot System
+
+**What is the Unclaimed Pot?**
+- A single communal pool of troops
+- Visible to all players
+- Grows via ANTE (1/turn) and GATHER cards (1-7/card)
+
+**How troops enter the pot**:
+1. **ANTE** (automatic): 1 troop per turn
+2. **GATHER cards**: Small (1-3), Medium (3-5), Large (5-7)
+3. **Failed claims**: If contract fails, troops return to pot
+4. **Captain Jackpots**: When Captain drawn, becomes strength-10 troop
+
+**How troops leave the pot**:
+- **Standard Contract**: Claims ALL troops at once (all-or-nothing)
+- That's it! No other way to claim pot troops
+
+**Strategic Importance**:
+- Pot grows rapidly (1/turn + gather cards)
+- Players compete to claim at optimal timing
+- Waiting = more troops, but opponents might claim first
+- "Pot timing" is a core skill
+
+**Example Pot Growth**:
+```
+Turn 1: ANTE → Pot: [3] (1 troop, strength 3)
+Turn 2: ANTE → Pot: [3, 2] (2 troops, strength 5)
+Turn 3: Player plays "Gather Medium" → Pot: [3, 2, 4, 5, 3, 2] (6 troops, strength 19)
+Turn 4: Different player uses Standard Contract → Claims all 6 troops, pot now empty
+Turn 5: ANTE → Pot: [1] (1 troop, strength 1) - cycle begins again
+```
+
+### Influence Economy
+
+**What is Influence?**
+- Your "currency" for playing cards and contracting leaders
+- Determines your hand size (draw to influence each turn)
+- Range: 2-12 typically
+
+**Gaining Influence**:
+- **Destroy enemy army**: +1-2 influence (configurable)
+- **Eliminate player**: +2-4 influence (configurable)
+- **Economic cards**: Various influence gains
+- **Leader abilities**: Some leaders grant influence
+
+**Spending Influence**:
+- **Standard Contract**: 1-3 (configurable)
+- **Event cards**: Various costs
+- **Passive Tax**: -1 influence if you haven't attacked in X turns (configurable)
+
+**Spending Lock**: You cannot spend influence below 2 (prevents lockout scenarios)
+
+**Hand Size Rule**:
+- Hand size = `max(2, influence)`
+- Floor of 2 cards minimum
+- Ceiling of 10-12 cards maximum (configurable)
+
+**Example**:
+```
+Player starts with 6 influence
+- Plays Standard Contract: -2 influence → Now 4 influence
+- Draws to 4 cards at end of turn
+- Destroys enemy army next turn: +1 influence → Now 5 influence
+- Draws to 5 cards at end of turn
+```
+
+### Army Management
+
+**Multiple Armies Per Player**:
+- Each player can have 0-10+ armies simultaneously
+- Each army is independent (own troops, own leader)
+- Strategic positioning and army selection
+
+**Army Composition**:
+- **Troops**: List of ranks (1-5), strength = SUM of ranks
+- **Leader** (optional): Adds attack bonus (+1/+2/+3)
+- **Total Strength**: Sum of troop ranks + leader attack bonus
+
+**Creating Armies**:
+1. **Standard Contract**: Claim pot troops + draft leader → new army
+2. **Contract Cards**: Various contract cards → new army
+3. **Gather + Leader**: Gather troops, then contract leader separately
+
+**Army Example**:
+```
+Army 1: [5, 4, 3, 2] + Commander (+3) = 17 strength
+Army 2: [5, 5, 5] + Mage (+2) = 17 strength
+Army 3: [3, 2, 1] + Captain (+1) = 7 strength
+
+Total: 3 armies, 41 combined strength
+```
+
+**Army Destruction**:
+- When army destroyed in combat, all troops discarded
+- Leader returns to player's leader pool (can be reassigned)
+- Net damage ÷ 5 = towers destroyed (if attacking towers)
+
+---
+
+## Event Cards
+
+### Card Type Breakdown
+
+#### Contract Cards (25 total)
+
+**CONTRACT_MAGE (15 cards)**:
+- **Cost**: leader_contract_cost influence (1-3, configurable)
+- **Effect**: Choose 1 mage from 3-card Mage Market
+- **Use**: Draft mages for +2 attack bonus
+
+**CONTRACT_COMMANDER (10 cards)**:
+- **Cost**: leader_contract_cost influence (1-3, configurable)
+- **Effect**: Choose 1 commander from 3-card Commander Market
+- **Use**: Draft commanders for +3 attack bonus
+
+#### Gather Troops Cards (30 total)
+
+**GATHER_SMALL (10 cards)**:
+- **Effect**: Draw 1-3 troops from Troop Deck → Unclaimed Pot
+- **Examples**: "Scout Patrol" (2 troops), "Recruitment Drive" (3 troops)
+
+**GATHER_MEDIUM (10 cards)**:
+- **Effect**: Draw 3-5 troops from Troop Deck → Unclaimed Pot
+- **Examples**: "Army Muster" (4 troops), "War Levy" (5 troops)
+
+**GATHER_LARGE (10 cards)**:
+- **Effect**: Draw 5-7 troops from Troop Deck → Unclaimed Pot
+- **Examples**: "Mass Conscription" (6 troops), "Total Mobilization" (7 troops)
+
+**Important**: Gather cards add troops to the POT, not directly to you! You must claim via Standard Contract.
+
+#### Attack Cards (20 total)
+
+**ATTACK_BASIC (5 cards)**:
+- **Effect**: Choose army, choose target, attack (ends turn)
+- **Examples**: "Direct Assault", "Frontal Attack"
+
+**ATTACK_TACTICAL (5 cards)**:
+- **Effect**: Attack with bonuses (+2 to +5 strength)
+- **Examples**: "Flanking Maneuver" (+3), "Overwhelming Force" (+5)
+
+**ATTACK_CONDITIONAL (5 cards)**:
+- **Effect**: Attack with conditions or situational bonuses
+- **Examples**: "Ambush" (bonus vs larger army), "Revenge Strike" (bonus if towers lost)
+
+**ATTACK_AOE (3 cards)**:
+- **Effect**: Attack multiple targets or all players
+- **Examples**: "Blitzkrieg", "Total War"
+
+**ATTACK_RISKY (2 cards)**:
+- **Effect**: High risk/high reward attacks
+- **Examples**: "Pyrrhic Victory" (win combat, lose all troops), "Scorched Earth"
+
+**All attack cards end your turn immediately when played.**
+
+#### Economic Cards (20 total)
+
+**ECONOMIC**:
+- **Effects**: Gain influence, draw cards, resource management
+- **Examples**:
+  - "Diplomacy": +2 influence
+  - "Trade Agreement": +1 influence, draw 1 card
+  - "Tribute": +3 influence, discard 1 card
+  - "War Economy": +1 influence per attack this turn
+
+#### Manipulation Cards (15 total)
+
+**MANIPULATION**:
+- **Effects**: Disrupt opponents, steal troops, force actions
+- **Examples**:
+  - "Sabotage": Target discards 1 card
+  - "Steal Troops": Take 1 troop from opponent army
+  - "Forced March": Target must attack
+  - "Reverse Turn Order": Reverse play order
+
+#### Utility & Special Cards (35 total)
+
+**Various effects**:
+- **Battle Frenzy**: 0 casualties on next attack
+- **Raiding Party**: Attack + gain 5 troops
+- **Spoils of War**: After attack, draw 2 cards + 3 influence
+- **Tactical Retreat**: 50% casualties this turn
+- **Reinforcements**: Regain casualties after combat
+- **Fortified Position**: 0 casualties when defending
+- **Momentum**: -1 casualty per attack, stacks
+- **Blitzkrieg**: Attack twice after army defeat
+- **Raze**: Press attack after tower destruction
+- **Chain Assault**: Tower destroyed → draw again
+- **Siege Equipment**: Nullify ALL tower damage (next attack)
+- **Protective Wards**: Reduce tower damage 50%
+- **Plunder**: Tower → 3 influence + 1 card
+- **Conscription**: 4 influence → 6 troops
+- **Claim Army**: Claim unclaimed troops with available leader
+- **Guerrilla Tactics**: Cap casualties at 5
+- **Siege Attack**: Bypass armies, hit towers directly
+- **Artillery Strike**: Bypass, 2x damage to towers
 
 ---
 
 ## Combat
 
-### Attacking
-          
-**Attacking A Player:**
-- The attacking player selects an army and a player (defending) to attack.
-- The defending player selects an army to block with.
-- Resolve the "tricks" step.
-- Resolve the "resolving attacks" step.
+### Combat Overview
 
-### Attacking Towers
-  
-- If an attacking army is unblocked, it can destroy a single tower. 
-- Towers have an attack value of 1, (attacking army will take 1 damage)
-- When a player's last tower is destroyed, that player is defeated. 
+Combat in Battalion is **player-directed** and **sum-based**:
+- Attacker chooses which army attacks
+- Attacker chooses target (enemy army or enemy towers)
+- Defender chooses which army defends (if armies available)
 
-### Attacking Tricks
- 
-- After a blocker is selected, each player, starting with the attacking player takes it in turns to cast a trick. 
-- After all players have cast their tricks, they must be resolved at once.
+### Army vs Army Combat
 
-### Resolving Attacks
- 
-- **[KEEP FROM v1.3/v1.4]** Once all tricks are cast and resolved, each army loses a number of troops equal to the attack power of the opposing army PLUS ONE.
-- **Example:** An army with 5 attack power destroys 6 troops (5 + 1).
-- **[KEEP FROM v1.3/v1.4 - Overkill]:** If an army is destroyed and there is leftover damage, the excess damage is dealt to the defender's tower.
-- **Example:** You attack with 7 power, enemy army has 4 troops. Army is destroyed (taking 5 damage with +1 bonus), and 2 damage carries over to their tower (destroying it if it's their last one).
-- When an army is destroyed in combat (reduced to 0 troops), all troops and the leader (if any) are placed in their respective discard piles.
-- Surviving armies are returned to their owner's board. 
-- As always, if you destroy an enemy army, you increase your maximum hand size by 1.
+**Combat Resolution**:
+1. **Calculate Strength**:
+   - Attacker strength = sum of troop ranks + leader attack bonus
+   - Defender strength = sum of troop ranks + leader attack bonus
 
-## Tricks
-  
-- Tricks may be played by ANY player during a player's Action step (even if it is not your turn).
-- Players can influence combat, and other players' turns with a well-timed trick.
+2. **Determine Winner**:
+   - Higher strength wins
+   - Ties: Defender wins
 
----
+3. **Casualties**:
+   - **Winner**: Loses troops equal to loser's strength (mutual damage)
+   - **Loser**: Army destroyed (all troops discarded, leader returns to pool)
 
-## Summary of Changes from v1.4
+4. **Influence Rewards**:
+   - Winning player gains influence (configurable, typically +1-2)
 
-### What's NEW in v1.5:
+**Example**:
+```
+Attacker: [5, 4, 3] + Commander (+3) = 15 strength
+Defender: [5, 5, 2] + Mage (+2) = 14 strength
 
-1. **🔥 SIMULTANEOUS BUILD PHASE (COMMUNAL)** - The game-changer!
-   - Everyone builds at once into 4 shared piles
-   - Face-down placement, dramatic reveal
-   - Based on 7 Wonders / Robo Rally best practices
-   - Removes turtle's information advantage
-   - Creates chaos and excitement
-   - Competitive claiming (fight for best armies)
+Attacker wins!
+- Defender's army destroyed (troops discarded, Mage returns to hand)
+- Attacker takes 14 casualties:
+  - Remove 14 strength from [5, 4, 3] = Remove [5, 4, 3] + 2 more
+  - Remove Rank 3 → [5, 4]
+  - Remove Rank 4 → [5]
+  - Remove 5 more → Army destroyed!
 
-2. **⚔️ LEADERS REQUIRED TO CLAIM** - Should have been explicit from day 1!
-   - You CANNOT claim an army without a leader
-   - Must acquire leaders (buying, contracts, or draw captain)
-   - Turtle MUST engage with economy now
-   - No more winning with 0 leaders acquired
+Both armies destroyed! (This happens often due to mutual damage)
+Attacker gains +1 influence for destroying enemy army
+```
 
-3. **💰 CONTRACTS COST 2 INFLUENCE** - The Goldilocks zone!
-   - Was 1 influence in v1.3 (98% usage, too spammy)
-   - Was 3 influence in v1.4 (4% usage, dead mechanic)
-   - Now 2 influence (should be 40-50% usage, balanced!)
-   - Clear trade-off vs buying (2 inf cheap weak vs 1 inf + card strong)
+### Army vs Towers Attack
 
-4. **🃏 CARD QUANTITIES REBALANCED** - Fewer troops, more captains!
-   - **Troops: 58 → 40** (4 of each rank, not 6)
-   - **Captains: 7 → 12** (much more common)
-   - **Contracts: 12** (unchanged, but cost is 2 now)
-   - **Total deck: 89 → 76** (smaller, faster games)
-   - Troops are now valuable (can't hoard forever)
-   - Captains actually drawable (natural claiming viable)
+**When no defender chosen (or no armies to defend)**:
 
-### What's KEPT from v1.4:
+1. **Tower Damage Calculation**:
+   - Base tower damage = 5 per tower (configurable)
+   - Total tower damage = 5 × remaining towers
 
-1. **✅ Bought Leaders +1 Attack** - Buying gives stronger leaders
-2. **✅ +1 Combat Damage** - Each army does base damage +1
-3. **✅ Overkill to Towers** - Excess damage destroys towers
-4. **✅ No Auto-Influence Growth** - Only gain from destroying armies/players
-5. **✅ No Influence Cap** - Can grow beyond 6 if you're dominating
+2. **Combat Resolution**:
+   - Army strength vs tower damage
+   - Net damage = army strength - tower damage
+   - If net positive: `net_damage ÷ 5 = towers destroyed`
+   - Army takes casualties equal to tower damage
 
-### What's REMOVED from v1.4:
+3. **Tower Destruction**:
+   - Attacker gains influence (configurable)
+   - Tower destruction **immediately ends turn** (v1.15+ mechanic)
 
-Nothing removed - we're building on top of v1.4's foundation with better balance.
+**Example 1: Successful Tower Attack**:
+```
+Attacker: [5, 5, 5, 4, 3] + Commander (+3) = 25 strength
+Defender: 3 towers (5 damage each = 15 total tower damage)
 
----
+Net damage = 25 - 15 = 10
+Towers destroyed = 10 ÷ 5 = 2 towers
 
-## Why v1.5 Will Work (When v1.2, v1.3, v1.4 Failed)
+Result:
+- Defender loses 2 towers (now 1 tower remaining)
+- Attacker's army takes 15 casualties → Reduced to [5, 5, 3] + Commander
+- Turn ends immediately (tower destroyed)
+```
 
-**v1.2 Problem:** Contracts too cheap (1 inf), turtle dominates (54%)  
-**v1.3 Problem:** Auto-influence backfired, turtle still dominates (51%)  
-**v1.4 Problem:** Contracts too expensive (3 inf), turtle wins WITHOUT leaders (54%)
+**Example 2: Failed Tower Attack**:
+```
+Attacker: [5, 4, 3] + Mage (+2) = 14 strength
+Defender: 3 towers (5 damage each = 15 total tower damage)
 
-**v1.5 Solution (ALL FOUR CHANGES TOGETHER):**
+Net damage = 14 - 15 = -1 (negative, no towers destroyed)
 
-1. **Simultaneous building** → Turtle can't see threats before committing
-2. **Leaders required** → Turtle MUST acquire leaders (can't win with raw troops)
-3. **Contracts cost 2** → Viable alternative to buying (40-50% usage expected)
-4. **Fewer troops, more captains** → Resource constraint + natural claiming
+Result:
+- No towers destroyed
+- Attacker's army takes 14 casualties → Army destroyed
+- Wasted attack!
+```
 
-**None of these work alone. Together, they break turtle's dominance.**
+### Tower Damage Reduction Cards
 
-**Expected Results (based on 15,000 games of data):**
-- Turtle win rate: 54% → 25-30% (balanced!)
-- Game length: 54 turns → 30-35 turns (faster!)
-- Contract usage: 4% → 45% (alive again!)
-- Strategy diversity: All strategies 20-30% (perfect balance!)
+**Some cards reduce tower damage**:
+- **Siege Equipment**: Nullify ALL tower damage (next attack)
+- **Protective Wards**: Reduce tower damage 50%
+- **Vanguard Formation**: First attack ignores tower damage
 
----
+**These are critical for successful tower attacks!**
 
-## Tips for Physical Gameplay
+### Bypass Attacks (v1.13+ Mechanic)
 
-### Making Simultaneous Building Smooth
+**Special attack cards that skip army combat**:
 
-**Setup:**
-- Place 4 communal build piles clearly in center
-- Give each pile a number or color marker
-- Designate one player as "Build Master" (dealer works)
+**SIEGE_ATTACK**:
+- Bypass all armies
+- Deal `bypass_damage` (configurable, typically 5-10) directly to towers
 
-**During Planning Phase:**
-- Use poker chips or tokens as "ready" indicators
-- Or simply say "Ready!" when done
-- Be quick - don't slow the game down
+**ARTILLERY_STRIKE**:
+- Bypass all armies
+- Deal `2× bypass_damage` (typically 10-20) directly to towers
 
-**Face-Down Placement (Recommended):**
-- Place your chosen cards face-down NEXT TO the pile you're building on
-- Use position to indicate which pile (left side = left pile, etc.)
-- This is clearest and most dramatic
-
-**The Reveal:**
-- Build Master counts: "3... 2... 1... REVEAL!"
-- All flip cards simultaneously
-- Immediately place onto communal piles
-- Check for illegal placements, discard if needed
-
-**Keep It Fun:**
-- Don't stress about perfect timing
-- Mistakes are OK (just discard illegal plays)
-- The drama and surprise are what make it fun!
-- Speed up as you get comfortable
-
-### Example Round
-
-**Setup:** 3 players (Alice, Bob, Carol), 4 communal piles
-
-**Planning Phase:**
-- Alice looks at hand, decides to place White/Red 3 on Pile 1, Black 2 on Pile 3
-- Bob decides to place Black 4 on Pile 3 (competing with Alice!)
-- Carol decides to place White/Red 1 on Pile 2
-- All place cards FACE-DOWN next to their target piles
-- All say "Ready!"
-
-**Reveal Phase:**
-- Build Master (Alice): "3... 2... 1... REVEAL!"
-- All flip cards simultaneously
-- Alice places White/Red 3 on Pile 1, Black 2 on Pile 3
-- Bob places Black 4 on Pile 3 (now has 2 Black cards)
-- Carol places White/Red 1 on Pile 2
-
-**Validation:**
-- Check all placements follow color/rank rules
-- All legal! Armies grow
-- Pile 3 now has 2 Black troops (different ranks) - competitive!
-
-**Action Phase:**
-- Play continues in turn order
-- Alice's turn: Might claim Pile 1 (has 3+ troops and a leader)
-- Bob's turn: Might claim Pile 3 (competing for same army)
-- Carol's turn: Might build again (trigger another simultaneous phase)
-
-**This is the chaos and fun of v1.5!**
+**Use**: Punish players who neglect armies, create direct pressure
 
 ---
 
-*"Simultaneous builds, dramatic reveals, competitive claiming - this is Battalion as it was meant to be played!"*
+## Victory Conditions
+
+### 1. Conquest Victory (90% of games)
+
+**Last player standing wins!**
+
+- All other players eliminated (0 towers)
+- Most common victory type
+
+### 2. Troop Deck Depletion (10% of games)
+
+**When Troop Deck runs out**:
+1. Game ends immediately
+2. Player with **highest influence** wins
+3. Tiebreaker: Most armies → Most troops → Most towers
+
+**Why this matters**: Troop Deck is the game timer (doesn't reshuffle like Event Deck)
+
+### Elimination
+
+**A player is eliminated when**:
+- Towers reach 0
+- Player removed from turn order
+- All their armies, leaders, and hand discarded
+
+---
+
+## Strategy Guide
+
+### 6 Viable Strategies (All 15-20% win rate)
+
+#### 1. RUSH (Aggressive)
+- **Goal**: Fast attacks, 3-troop armies, early pressure
+- **Key Cards**: Gather Small, Attack Basic, Contract Cheap
+- **Timing**: Claim pot early (3-5 troops), attack immediately
+- **Wins**: 15-20% (fast games, high variance)
+
+#### 2. SWARM (Army Count)
+- **Goal**: Many small armies, overwhelm with numbers
+- **Key Cards**: Contract Mage/Commander, Gather Medium
+- **Timing**: Claim pot frequently, build 4-6 armies
+- **Wins**: 15-20% (resilient, hard to eliminate)
+
+#### 3. BUILDUP (Economic)
+- **Goal**: Big armies, strong economy, late game power
+- **Key Cards**: Gather Large, Economic cards, Contract Commander
+- **Timing**: Wait for pot to grow (10-15 troops), massive claims
+- **Wins**: 15-20% (slow start, strong finish)
+
+#### 4. FORTRESS (Defensive)
+- **Goal**: Patient defense, counter-attack, survive to end
+- **Key Cards**: Protective Wards, Fortified Position, Reinforcements
+- **Timing**: Block attacks, punish overextensions
+- **Wins**: 15-20% (consistent, safe)
+
+#### 5. TEMPO (Flexible)
+- **Goal**: Opportunistic, adapt to board state
+- **Key Cards**: All types, depends on situation
+- **Timing**: Respond to threats, exploit openings
+- **Wins**: 15-20% (requires skill, balanced)
+
+#### 6. ADAPTIVE (Reactive)
+- **Goal**: React to opponents, counter-strategies
+- **Key Cards**: Manipulation, counter-plays
+- **Timing**: Read opponents, disrupt plans
+- **Wins**: 15-20% (highest skill ceiling)
+
+### Key Strategic Concepts
+
+**Pot Timing**:
+- Small pot (3-5 troops): Rush strategy, fast armies
+- Medium pot (6-10 troops): Standard timing, good value
+- Large pot (10-15+ troops): Risk vs reward, opponents might claim first
+
+**Influence Management**:
+- Keep at least 3 influence (emergency contract)
+- Spend aggressively when ahead
+- Hoard when behind (economy recovery)
+
+**Army Positioning**:
+- Multiple small armies: Resilient, flexible
+- Few large armies: Powerful, vulnerable
+- Mix: Usually optimal
+
+**Leader Drafting**:
+- Commanders > Mages > Captains (generally)
+- Counter-draft opponents (deny strong picks)
+- Market visibility = strategic advantage
+
+**Attack Timing**:
+- Attack when net positive (army strength > tower damage + defender strength)
+- Use tower damage reduction cards for tough attacks
+- Tower destruction ends turn (plan accordingly)
+
+**Card Chaining**:
+- Gather → Gather → Contract → Attack (common chain)
+- Economic → Gather → Gather → Contract (buildup chain)
+- Attack early = fewer cards played (turn ends)
+- Attack late = maximize card plays first
+
+---
+
+## Quick Reference
+
+### Turn Order
+1. **ANTE**: 1 troop → pot (automatic)
+2. **DRAW**: 1 event card
+3. **CHAIN**: Play 2-3 cards (Standard Contract available)
+4. **REFILL**: Draw to influence (min 2, max 10-12)
+
+### Standard Contract
+- **Cost**: 1-3 influence (configurable)
+- **Effect**: Claim ALL pot troops + draft 1 leader → new army
+- **Frequency**: Most important action, use often
+
+### Influence
+- **Spending Lock**: Can't go below 2 (prevents lockout)
+- **Hand Size**: Draw to influence each turn (floor of 2)
+- **Gains**: Destroy army (+1-2), eliminate player (+2-4)
+
+### Combat
+- **Army Strength**: Sum of ranks + leader bonus
+- **Mutual Damage**: Winner takes casualties equal to loser's strength
+- **Tower Attack**: `(strength - tower_damage) ÷ 5 = towers destroyed`
+- **Tower Damage**: 5 per tower (default)
+
+### Victory
+- **Conquest**: Last player standing (90% of games)
+- **Depletion**: Highest influence when Troop Deck empty (10% of games)
+
+---
+
+## Designer Notes
+
+This rulebook documents the **actual implementation** of Battalion simulator v1.18, which has been tested through 700,000+ simulated games across 14 meta-evolution cycles using genetic algorithms.
+
+**Key Design Principles**:
+- **Fun above all else**: The fun part (attacking) is also the winning strategy
+- **Strategic agency > luck**: Contracts, not random draws; visible markets
+- **Drama over balance**: Big swings, memorable moments, 90% conquest rate
+- **20-30 turn games**: Achieved via game length optimization (v1.6 goal)
+- **6 viable strategies**: All strategies win 15-20% (perfect balance)
+
+**Version History**:
+- **v1.5**: Simultaneous building (physical game, never implemented in simulator)
+- **v1.6**: Game length optimization
+- **v1.7**: Two-deck system, turn-based flow, sum-based combat
+- **v1.8**: Event card chaining
+- **v1.15**: Unclaimed pot system, tower destruction ends turn
+- **v1.16**: Draft markets (3-card face-up)
+- **v1.17**: ANTE mechanic, spending lock
+- **v1.18**: Standard Contract fix, Captain jackpots, Ghost Cards removed
+
+**For more information**:
+- Simulator: `battalion_simulator_v1_18.py`
+- Event Card Reference: See [CORRECTED_EVENT_CARDS_REFERENCE.md]
+- Meta-Evolution Results: See `meta_evolution/EXECUTIVE_SUMMARY.md`
+
+---
+
+**Last Updated**: November 5, 2025
+**Status**: ✅ Matches simulator v1.18 exactly
+**Playtest Status**: 700,000+ simulated games, physical playtest TBD
+
