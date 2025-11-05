@@ -1,0 +1,117 @@
+# Battalion .gitignore
+
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+MANIFEST
+
+# Virtual Environments
+.venv/
+venv/
+ENV/
+env/
+.virtualenv/
+
+# IDEs
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+.project
+.pydevproject
+.settings/
+
+# OS Files
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+
+# Testing
+.pytest_cache/
+.coverage
+.coverage.*
+htmlcov/
+.tox/
+.hypothesis/
+
+# Logs
+*.log
+*.log.*
+logs/
+
+# Large data files (keep summaries only)
+simulation_results_*.json
+ga_results_*.json
+cycle_*_output.log
+detailed_game_*.log
+verbose_*.log
+monitored_*.log
+
+# But keep important cycle results
+!cycles/*/ga_results_*.json
+!cycles/*/analysis_*.md
+!cycles/*/README.md
+
+# Temporary files
+*.tmp
+*.temp
+*.bak
+*_backup.py
+*_old.py
+*~
+
+# Jupyter Notebooks
+.ipynb_checkpoints/
+*.ipynb
+
+# MyPy
+.mypy_cache/
+.dmypy.json
+dmypy.json
+
+# Environment variables
+.env
+.env.local
+
+# Database
+*.db
+*.sqlite
+*.sqlite3
+
+# Compiled documentation
+docs/_build/
+docs/.doctrees/
+
+# Project-specific large files
+megascale_*.log
+megascale_*.json
+simulation_results_*games*.json
+ga_v*_megascale*.json
+ga_*_largescale*.json
+
+# Keep only key documentation
+!EXECUTIVE_SUMMARY.md
+!CYCLE_*_COMPLETE_SUMMARY.md

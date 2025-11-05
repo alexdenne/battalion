@@ -1,0 +1,27 @@
+# Battalion - Python Dependencies
+
+# Core Python version
+# Requires Python 3.10 or higher
+
+# No external dependencies required for basic simulator!
+# The core battalion_simulator.py uses only Python standard library:
+# - dataclasses
+# - enum
+# - random
+# - typing
+
+# Optional: For meta-evolution and data analysis
+numpy>=1.24.0          # Numerical computations
+pandas>=2.0.0          # Data analysis
+matplotlib>=3.7.0      # Visualization
+
+# Optional: For development and testing
+pytest>=7.4.0          # Testing framework
+pytest-cov>=4.1.0      # Coverage reports
+black>=23.0.0          # Code formatting
+flake8>=6.0.0          # Linting
+mypy>=1.5.0            # Type checking
+
+# Optional: For Jupyter notebooks (interactive analysis)
+jupyter>=1.0.0
+ipykernel>=6.25.0
